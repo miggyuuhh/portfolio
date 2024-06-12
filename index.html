@@ -4,261 +4,352 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/styles.css" />
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Miggy | Web Developer</title>
-    <link rel="shortcut icon" href="icons/icon.png">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-
   <body>
-    <!-- Navbar -->
-      <nav>
-        <img src="images/logo.png">
-        <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">More</a></li>
+    <nav id="desktop-nav">
+      <div class="logo">Miggy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#travels">Travels</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="burger-menu" id="burger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
-      </nav>
-    <!-- Hero Section -->
-      <section class="hero" id="about">
-        <img
-          src="images/background.jpg"
-          loading="lazy"
-          class="hero-img"
-        />
-        <div class="bio animate__animated animate__shakeX">
-          <img src="images/miggy.jpg" width="20px" height="20px">
-          <h2 class="bio-title">MISHAEL CALAUNAN</h2>
-          <h4>Web Developer</h4>
-          <p class="bio-text">
-            With a passion for art, science, and innovation, 
-            I have the skill set and educational background necessary to dive deep into the world of technology. 
-            As a sanguine, self-motivated team player with excellent communication, I envision an exciting future in the industry. 
-            Feel free to have a look at my site to see all that I have to offer.
-          </p>
-        </div>
-      </section>
-
-
-    <!-- More about -->
-
-      <section class="more-about">
-        <h2>More About Me</h2>
-        <br><br><br>
-              <p>
-                <strong>EDUCATION</strong><br><br>
-                <strong>2018 - Present</strong>
-              <br>Central Luzon State University – Science City of Muñoz, NE. 
-              <br>Bachelor of Science in Information Technology<br> 
-
-              <br><strong>2015 - 2018</strong>
-              <br>High School - Vientiane Berean Academy 
-              <br>Class Valedictorian</p> 
-
-              <p>
-                <strong>EXPERIENCE</strong><br><br>
-                <strong>Aug. 2019 - May 2021</strong>
-              <br>College of Engineering Student Government 
-              <br>P.I.O. for Information Technology<br>
-    
-              <br><strong>Aug. 2019 - May 2020</strong> 
-              <br>CLSU - Artist Club Mother Chapter 
-              <br>Vice President<br> 
-              
-              <br><strong>Aug. 2018 - May 2019</strong>
-              <br>University Athlete - Karatedo</p> 
-              <p>
-                <strong>CONTACT ME</strong><br><br>
-                <strong>EMAIL</strong>
-              <br>tokuoa2k@gmail.com<br><br>
-              <strong>CONTACT NUMBER</strong>
-              <br>+63-939-338-8827 
-      </section>
-
-    <!-- Skills section -->
-      <section class="skills" id="skills">
-        <h2 class="skill-header">My Top Skills</h2>
-
-        <div class="skills-wrapper">
-          <div class="first-set animate__animated animate__pulse">
-            <img
-              src="icons/html.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="icons/js.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="icons/css.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
-          <h2 class="skill-header">Languages I Know</h2>
-          <div class="second-set animate__animated animate__pulse">
-            <img
-              src="icons/fil.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="icons/eng.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="icons/lao.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
-        </div>
-      </section>
-
-    <!-- Projects section -->
-      <section class="projects" id="projects">
-        <h2 class="projects-title">My Recent Project</h2>
-        <div class="projects-container">
-          <div class="project-container project-card">
-            <img
-              src="images/metflix.png"
-              alt="metflix"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">Metflix</h3>
-            <p class="project-details">
-              Metflix is a movie ticketing system developed by our group for our subject ITELEC 4100. 
-              It can browse and book the latest movies of your choice effortlessly.
-            </p>
-            <a href="https://metflix-movie-website.000webhostapp.com/" target="_blank" class="project-link">Check it Out</a>
-          </div>
-        </div>
-      </section>
-
-    <!-- Contact section -->
-      <section class="contact" id="contact">
-        <h2>Get In Touch With Me</h2>
-        <div class="contact-form-container">
-          <div class="contact-form">
-            <form action="https://formspree.io/f/xyylngw" method="POST">
-              <div class="form-control">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="sender-name"
-                  placeholder="Enter Your Name"
-                  class="input-field"
-                  required
-                />
-              </div>
-              <div class="form-control">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="sender-email"
-                  placeholder="Enter Your Email"
-                  class="input-field"
-                  required
-                />
-              </div>
-              <div class="form-control">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  cols="60"
-                  rows="10"
-                  placeholder="Enter Your Message"
-                  name="message"
-                  class="input-field"
-                  required
-                ></textarea>
-              </div>
-              <input
-                type="submit"
-                value="Submit"
-                id="submit-btn"
-                class="submit-btn"
-              />
-            </form>
-          </div>
-        </div>
-      </section>
-
-    <!-- Social accounts - Fixed to the right -->
-      <div class="socials">
-        <a href="https://twitter.com/miggyuuhh" target="_blank"
-          ><img
-            src="icons/twitter.png"
-            alt="Twitter"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="https://instagram.com/miggyuuhh" target="_blank"
-          ><img
-            src="icons/instagram.png"
-            alt="Instagram"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="https://open.spotify.com/user/12183564155?si=637c8c8a27384873" target="_blank"
-          ><img
-            src="icons/spotify.png"
-            alt="Spotify"
-            loading="lazy"
-            class="socicon"
-        /></a>
       </div>
-    <!-- Scroll to top -->
-        <i class="scroll-up" id="scroll-up"
-        ><a href="#"><img
-          src="icons/back-to-top.png"
-          class="socicon up-arrow"
-          alt="scroll-up"
-        
-      /></a></i>
-
-    <!-- Footer section -->
-      <footer>
-        <p>
-          Copyright © 2021&nbsp; — By  Miggy 
-        </p>
-      </footer>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Miggy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#travels" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Mishael Calaunan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mishael Calaunan</h1>
+        <p class="section__text__p2">a.k.a. Miggy <br/>(yes, it's a mouthful)</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            See my CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/miggyah'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.github.com/ miggyah'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to know me more...</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />Valorant <br />(washed diamond lol)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. in Information Technology<br />M.Sc. in Cybersecurity</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a proud Filipino living in Lao PDR, I have embraced the rich values 
+              of both cultures, blending the warm hospitality and vibrant traditions 
+              of the Philippines with the serene beauty and deep-rooted customs of the Laotians. 
+              This unique cultural way has not only enriched my personal experiences 
+              but has also allowed me to build meaningful connections and share the best 
+              of both worlds with those around me.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Find My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Past Relationships</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PTSD</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Trauma</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Iyak</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Relapsing</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ubusin Self</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MovedOn</h3>
+                  <p>Professional</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Current Relationships</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sanaol po:(</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>When Kaya?</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SingleAF</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>WTF</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#travels'"
+      />
+    </section>
+    <section id="travels">
+      <p class="section__text__p1">See My Recent</p>
+      <h1 class="title">Travels</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Travel One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Singapore
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Travel Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Thailand
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Travel Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                South Korea
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mishael@champait.com">mishael@champait.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/miggyah">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#travels">Travels</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Miggy | All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
